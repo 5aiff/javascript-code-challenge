@@ -1,10 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>JS 5 Code Challenges</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="d-flex justify-content-center mt-5">
@@ -12,54 +17,167 @@
         <h1 class="h1 text-dark mb-5">Js 5 Code Challenges</h1>
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="ch1-tab" data-bs-toggle="tab" data-bs-target="#ch1-tab-pane" type="button" role="tab" aria-controls="ch1-tab-pane" aria-selected="true">Challenge 1</button>
+            <button
+              class="nav-link active"
+              id="ch1-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#ch1-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="ch1-tab-pane"
+              aria-selected="true"
+            >
+              Challenge 1
+            </button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="ch2-tab" data-bs-toggle="tab" data-bs-target="#ch2-tab-pane" type="button" role="tab" aria-controls="ch2-tab-pane" aria-selected="false">Challenge 2</button>
+            <button
+              class="nav-link"
+              id="ch2-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#ch2-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="ch2-tab-pane"
+              aria-selected="false"
+            >
+              Challenge 2
+            </button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="ch3-tab" data-bs-toggle="tab" data-bs-target="#ch3-tab-pane" type="button" role="tab" aria-controls="ch3-tab-pane" aria-selected="false">Challenge 3</button>
+            <button
+              class="nav-link"
+              id="ch3-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#ch3-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="ch3-tab-pane"
+              aria-selected="false"
+            >
+              Challenge 3
+            </button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="ch4-tab" data-bs-toggle="tab" data-bs-target="#ch4-tab-pane" type="button" role="tab" aria-controls="ch4-tab-pane" aria-selected="false">Challenge 4</button>
+            <button
+              class="nav-link"
+              id="ch4-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#ch4-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="ch4-tab-pane"
+              aria-selected="false"
+            >
+              Challenge 4
+            </button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="ch5-tab" data-bs-toggle="tab" data-bs-target="#ch5-tab-pane" type="button" role="tab" aria-controls="ch5-tab-pane" aria-selected="false">Challenge 5</button>
+            <button
+              class="nav-link"
+              id="ch5-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#ch5-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="ch5-tab-pane"
+              aria-selected="false"
+            >
+              Challenge 5
+            </button>
           </li>
-          
         </ul>
         <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="ch1-tab-pane" role="tabpanel" aria-labelledby="ch1-tab" tabindex="0"><div class="m-5 w-50">
+          <div
+            class="tab-pane fade show active"
+            id="ch1-tab-pane"
+            role="tabpanel"
+            aria-labelledby="ch1-tab"
+            tabindex="0"
+          >
+            <div class="m-5 w-50">
               <h2 class="h2">Calculate the Fiverr Tax on Order Amount</h2>
-              <p>Fiverr charges a service fee on each transaction. This fee is usually 20% of the total order amount. Here you can calculate the fee by pressing the below button.</p>
-              <button class="btn btn-primary" onclick="calculateFiverrFee()">Calculate Fiverr Fee</button>
+              <p>
+                Fiverr charges a service fee on each transaction. This fee is
+                usually 20% of the total order amount. Here you can calculate
+                the fee by pressing the below button.
+              </p>
+              <button class="btn btn-primary" onclick="calculateFiverrFee()">
+                Calculate Fiverr Fee
+              </button>
               <p id="showYourAmount" class="mt-4"></p>
             </div>
           </div>
-          <div class="tab-pane fade" id="ch2-tab-pane" role="tabpanel" aria-labelledby="ch2-tab" tabindex="0"><div class="m-5 w-50">
-            <h2 class="h2">Convert Age in Years to Months and Days</h2>
-            <p>This Convert take Age in Years from users and convert it to months and days. Here you can convert your age to months and days by pressing the below button.</p>
-            <button class="btn btn-primary" onclick="convertAge()">Convert Age to Months</button>
-            <p id="showAgeInMonths" class="mt-4"></p>
-            <p id="showAgeInDays"></p>
+          <div
+            class="tab-pane fade"
+            id="ch2-tab-pane"
+            role="tabpanel"
+            aria-labelledby="ch2-tab"
+            tabindex="0"
+          >
+            <div class="m-5 w-50">
+              <h2 class="h2">Convert Age in Years to Months and Days</h2>
+              <p>
+                This Converter take Age in Years from users and convert it to
+                months and days. Here you can convert your age to months and
+                days by pressing the below button.
+              </p>
+              <button class="btn btn-primary" onclick="convertAge()">
+                Convert Age to Months
+              </button>
+              <p id="showAgeInMonths" class="mt-4"></p>
+              <p id="showAgeInDays"></p>
             </div>
           </div>
-          <div class="tab-pane fade" id="ch3-tab-pane" role="tabpanel" aria-labelledby="ch3-tab" tabindex="0"><div class="m-5">
+          <div
+            class="tab-pane fade"
+            id="ch3-tab-pane"
+            role="tabpanel"
+            aria-labelledby="ch3-tab"
+            tabindex="0"
+          >
+            <div class="m-5 w-50">
+              <h2 class="h2">Check Whether the Number is Odd or Even</h2>
+              <p>
+                Get a random number from user and check whether the number is odd or eve. Here you can check the number by pressing the below button.
+              </p>
+              <button class="btn btn-primary" onclick="checkNumber()">
+                Check Number
+              </button>
+              <p id="showNumber" class="mt-4"></p>
+              
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="ch4-tab-pane"
+            role="tabpanel"
+            aria-labelledby="ch4-tab"
+            tabindex="0"
+          >
+            <div class="m-5">
               <button class="btn btn-primary">Click Here</button>
             </div>
           </div>
-          <div class="tab-pane fade" id="ch4-tab-pane" role="tabpanel" aria-labelledby="ch4-tab" tabindex="0"><div class="m-5">
-            <button class="btn btn-primary">Click Here</button>
+          <div
+            class="tab-pane fade"
+            id="ch5-tab-pane"
+            role="tabpanel"
+            aria-labelledby="ch5-tab"
+            tabindex="0"
+          >
+            <div class="m-5">
+              <button class="btn btn-primary">Click Here</button>
+            </div>
           </div>
-        </div>
-        <div class="tab-pane fade" id="ch5-tab-pane" role="tabpanel" aria-labelledby="ch5-tab" tabindex="0"><div class="m-5">
-            <button class="btn btn-primary">Click Here</button>
-          </div>
-        </div>
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>

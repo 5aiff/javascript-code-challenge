@@ -19,3 +19,14 @@ function convertAge(){
 }
 
 // this Funciton is for Challenge 3
+function checkNumber(){
+  var randomNumber = prompt("Enter Any Number..");
+  
+  if(randomNumber % 2 == 0){
+    document.getElementById("showNumber").innerHTML = "The Number is: <strong class='text-danger'>Even</strong>";
+  }else{
+    document.getElementById("showNumber").innerHTML = "The Number is: <strong class='text-danger'>Odd</strong>";
+  }
+}
+
+//this function is for challenge 4
