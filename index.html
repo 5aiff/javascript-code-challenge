@@ -37,7 +37,11 @@
             </div>
           </div>
           <div class="tab-pane fade" id="ch2-tab-pane" role="tabpanel" aria-labelledby="ch2-tab" tabindex="0"><div class="m-5 w-50">
-              <button class="btn btn-primary">Click Here</button>
+            <h2 class="h2">Convert Age in Years to Months and Days</h2>
+            <p>This Convert take Age in Years from users and convert it to months and days. Here you can convert your age to months and days by pressing the below button.</p>
+            <button class="btn btn-primary" onclick="convertAge()">Convert Age to Months</button>
+            <p id="showAgeInMonths" class="mt-4"></p>
+            <p id="showAgeInDays"></p>
             </div>
           </div>
           <div class="tab-pane fade" id="ch3-tab-pane" role="tabpanel" aria-labelledby="ch3-tab" tabindex="0"><div class="m-5">
@@ -65,8 +69,20 @@
         var fiverrTax = (actualAmount * 20)/100;
         var yourAmount = actualAmount - fiverrTax;
         document.getElementById("showYourAmount").innerHTML = "You Will Get <strong class='text-danger'>"+yourAmount+"</strong> After Fiverr TAX"
-        // console.log(yourAmount);
       }
+
+
+      // this Function is for Challenge 2
+
+      function convertAge(){
+        var ageInYear = prompt("Enter Your Age in Years");
+        var ageInMonth = ageInYear * 12;
+        var ageInDays = ageInYear * 365;
+        document.getElementById("showAgeInMonths").innerHTML = "Your Age in Months: <strong class='text-danger'>"+ageInMonth+"</strong>";
+        document.getElementById("showAgeInDays").innerHTML = "Your Age in Days: <strong class='text-danger'>"+ageInDays+"</strong>";
+      }
+
+      
     </script>
   </body>
 </html>
