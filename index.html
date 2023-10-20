@@ -9,25 +9,64 @@
   <body>
     <div class="d-flex justify-content-center mt-5">
       <div>
-        <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
-            <div>
-              <button class="btn btn-primary">Calculate Fiverr Fee</button>
-            </div>
+        <h1 class="h1 text-dark mb-5">Js 5 Code Challenges</h1>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="ch1-tab" data-bs-toggle="tab" data-bs-target="#ch1-tab-pane" type="button" role="tab" aria-controls="ch1-tab-pane" aria-selected="true">Challenge 1</button>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ch2-tab" data-bs-toggle="tab" data-bs-target="#ch2-tab-pane" type="button" role="tab" aria-controls="ch2-tab-pane" aria-selected="false">Challenge 2</button>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ch3-tab" data-bs-toggle="tab" data-bs-target="#ch3-tab-pane" type="button" role="tab" aria-controls="ch3-tab-pane" aria-selected="false">Challenge 3</button>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ch4-tab" data-bs-toggle="tab" data-bs-target="#ch4-tab-pane" type="button" role="tab" aria-controls="ch4-tab-pane" aria-selected="false">Challenge 4</button>
           </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ch5-tab" data-bs-toggle="tab" data-bs-target="#ch5-tab-pane" type="button" role="tab" aria-controls="ch5-tab-pane" aria-selected="false">Challenge 5</button>
+          </li>
+          
         </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="ch1-tab-pane" role="tabpanel" aria-labelledby="ch1-tab" tabindex="0"><div class="m-5 w-50">
+              <h2 class="h2">Calculate the Fiverr Tax on Order Amount</h2>
+              <p>Fiverr charges a service fee on each transaction. This fee is usually 20% of the total order amount. Here you can calculate the fee by pressing the below button.</p>
+              <button class="btn btn-primary" onclick="calculateFiverrFee()">Calculate Fiverr Fee</button>
+              <p id="showYourAmount" class="mt-4"></p>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="ch2-tab-pane" role="tabpanel" aria-labelledby="ch2-tab" tabindex="0"><div class="m-5 w-50">
+              <button class="btn btn-primary">Click Here</button>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="ch3-tab-pane" role="tabpanel" aria-labelledby="ch3-tab" tabindex="0"><div class="m-5">
+              <button class="btn btn-primary">Click Here</button>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="ch4-tab-pane" role="tabpanel" aria-labelledby="ch4-tab" tabindex="0"><div class="m-5">
+            <button class="btn btn-primary">Click Here</button>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="ch5-tab-pane" role="tabpanel" aria-labelledby="ch5-tab" tabindex="0"><div class="m-5">
+            <button class="btn btn-primary">Click Here</button>
+          </div>
+        </div>
+        </div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script>
+      // this function is for challenge 1
+
+      function calculateFiverrFee(){
+        var actualAmount = prompt("Enter Fiverr Order Amount.");
+        var fiverrTax = (actualAmount * 20)/100;
+        var yourAmount = actualAmount - fiverrTax;
+        document.getElementById("showYourAmount").innerHTML = "You Will Get <strong class='text-danger'>"+yourAmount+"</strong> After Fiverr TAX"
+        // console.log(yourAmount);
+      }
+    </script>
   </body>
 </html>
